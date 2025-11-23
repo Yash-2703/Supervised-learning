@@ -1,9 +1,4 @@
-# -- coding: utf-8 --
-"""
-Created on Wed Oct 23 08:57:42 2024
 
-@author: Ketan biradar
-"""
 
 import pandas as pd
 import numpy as np
@@ -57,3 +52,4 @@ preds = model.predict(test[predictor])
 pd.crosstab(test[target], preds, rownames=['Actual'],colnames=['Predictions'])
 
 np.mean(preds == test[target]) #Taget the Accuracy
+

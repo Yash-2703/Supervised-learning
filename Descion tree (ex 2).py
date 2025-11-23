@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Oct 23 09:25:46 2024
-
-@author: ketan
-"""
 
 import pandas as pd
 import numpy as np
@@ -49,3 +43,4 @@ pd.crosstab(test[target], preds, rownames=['Actual'],colnames=['Predictions'])
 
 np.mean(preds == test[target])
 #model.predit([[2,1,1]])
+
